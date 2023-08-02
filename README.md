@@ -17,6 +17,7 @@ you can change the actual ascii characters used. You can add or subtract charact
 
 you can change the font size
 
+![image](https://github.com/edianibarrola/asciitizer/assets/13739419/796aa713-d929-4202-bda0-d610b07c5079)
 
 
 

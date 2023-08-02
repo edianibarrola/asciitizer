@@ -3,8 +3,8 @@ import numpy as np
 
 # Variables
 IMAGE_PATH = "test.png"
-CHARACTERS_PER_ROW = 1000
-ASPECT_RATIO = 1
+CHARACTERS_PER_ROW = 600
+ASPECT_RATIO = 1.3
 FONT_SIZE = 10
 ASCII_CHARS = "@%#*+=-:.  "
 
@@ -13,9 +13,12 @@ ASCII_INDEX = np.arange(0, 256, 256 / len(ASCII_CHARS))  # Create index for ASCI
 def scale_image(image, characters_per_row=CHARACTERS_PER_ROW, aspect_ratio=ASPECT_RATIO):
     (original_width, original_height) = image.size
     new_width = characters_per_row
-    new_height = int(aspect_ratio * new_width * original_height / original_width)
+    # Adjust for the aspect ratio of the characters
+    character_aspect_ratio = 1.67
+    new_height = int(aspect_ratio * new_width * original_height / original_width / character_aspect_ratio)
     new_image = image.resize((new_width, new_height))
     return new_image
+
 
 def grayscale_image(image):
     return image.convert("L")

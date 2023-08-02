@@ -2,8 +2,8 @@ from PIL import Image, ImageDraw, ImageFont
 import numpy as np
 
 # Variables
-IMAGE_PATH = "test.png"
-CHARACTERS_PER_ROW = 600
+IMAGE_PATH = "test.jpg"  # Change this to your image file path
+CHARACTERS_PER_ROW = 1000
 ASPECT_RATIO = 1.3
 FONT_SIZE = 10
 ASCII_CHARS = "@%#*+=-:.  "
@@ -38,6 +38,10 @@ def convert_image_to_ascii(image_path=IMAGE_PATH, characters_per_row=CHARACTERS_
     except Exception as e:
         print(e)
         return
+    
+    # Ensure the image is converted to RGB mode before resizing (JPG images may be in CMYK mode)
+    image = image.convert("RGB")
+    
     image = scale_image(image, characters_per_row, aspect_ratio)
     image = grayscale_image(image)
     ascii_str = map_pixels_to_ascii(image)

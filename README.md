@@ -1,5 +1,10 @@
 # asciitizer
-this code will allow you to convert any png image into ascii art.  
+this code will allow you to convert any png image into ascii art.  for example, the first image into the second. 
+![image](https://github.com/edianibarrola/asciitizer/assets/13739419/76d31356-dade-4582-b3a7-656a02bd9921)
+
+![image](https://github.com/edianibarrola/asciitizer/assets/13739419/796aa713-d929-4202-bda0-d610b07c5079)
+
+
 
 How to use:
 place your input image wherever the python file is. ( if you're using gitpod, just upload it in )
@@ -16,9 +21,6 @@ you can change the actual ascii characters used. You can add or subtract charact
 (if you put them back in reverse order, you get an inverted image)
 
 you can change the font size
-
-![image](https://github.com/edianibarrola/asciitizer/assets/13739419/796aa713-d929-4202-bda0-d610b07c5079)
-
 
 
 

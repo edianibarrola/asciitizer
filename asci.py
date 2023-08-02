@@ -1,12 +1,12 @@
 from PIL import Image, ImageDraw, ImageFont
 import numpy as np
 
-ASCII_CHARS = ' .:-=+*#%@'
+ASCII_CHARS = '@%#*+=-:. '
 ASCII_INDEX = np.arange(0, 256, 256 / len(ASCII_CHARS))  # Create index for ASCII_CHARS
 
 def scale_image(image, new_width=100):
     (original_width, original_height) = image.size
-    aspect_ratio = original_height / float(original_width)
+    aspect_ratio = original_height / float(original_width * 2)  # Adjust for ASCII's 2:1 ratio
     new_height = int(aspect_ratio * new_width)
     new_image = image.resize((new_width, new_height))
     return new_image
@@ -39,9 +39,9 @@ def get_text_dimensions(text, font):
     width, height = mask.size
     return width, height
 
-def ascii_to_image(ascii_str, font_size=15):
+def ascii_to_image(ascii_str, font_size=10):  # Adjust the font_size as necessary
     ascii_str_lines = ascii_str.split('\n')
-    fnt = ImageFont.load_default()
+    fnt = ImageFont.truetype('cour.ttf', font_size)
     max_width = 0
     total_height = 0
 
@@ -69,8 +69,8 @@ def ascii_to_image(ascii_str, font_size=15):
 
 def main(image_path, new_width):
     ascii_img = convert_image_to_ascii(image_path, new_width)
-    img = ascii_to_image(ascii_img, font_size=15)
+    img = ascii_to_image(ascii_img, font_size=10)  # Adjust the font_size as necessary
     img.save('ascii_image.png')
 
 if __name__ == "__main__":
-    main("test.png", 100)
+    main("test.png", 1000)

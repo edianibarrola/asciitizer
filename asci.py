@@ -1,7 +1,8 @@
 from PIL import Image, ImageDraw, ImageFont
 import numpy as np
 
-ASCII_CHARS = '@%#*+=-:. '
+ASCII_CHARS = "$@B%8WM#*oahkbdpqwmZO0QCJYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,\"^`'. "
+
 ASCII_INDEX = np.arange(0, 256, 256 / len(ASCII_CHARS))  # Create index for ASCII_CHARS
 
 def scale_image(image, new_width=100):
@@ -73,4 +74,4 @@ def main(image_path, new_width):
     img.save('ascii_image.png')
 
 if __name__ == "__main__":
-    main("test.png", 1000)
+    main("test.png", 600)

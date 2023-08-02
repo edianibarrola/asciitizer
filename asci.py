@@ -1,13 +1,11 @@
 from PIL import Image, ImageDraw, ImageFont
 import numpy as np
+
 ASCII_CHARS = "@%#*+=-:.  "
-
-
 ASCII_INDEX = np.arange(0, 256, 256 / len(ASCII_CHARS))  # Create index for ASCII_CHARS
 
-def scale_image(image, new_width=200):
+def scale_image(image, new_width=200, aspect_ratio=0.55):  # Adjust aspect_ratio as necessary
     (original_width, original_height) = image.size
-    aspect_ratio = original_height / float(original_width * 2)  # Adjust for ASCII's 2:1 ratio
     new_height = int(aspect_ratio * new_width)
     new_image = image.resize((new_width, new_height))
     return new_image
@@ -24,13 +22,13 @@ def map_pixels_to_ascii(image):
         ascii_img += "\n"
     return ascii_img
 
-def convert_image_to_ascii(image_path, new_width=100):
+def convert_image_to_ascii(image_path, new_width=100, aspect_ratio=0.55):  # Adjust aspect_ratio as necessary
     try:
         image = Image.open(image_path)
     except Exception as e:
         print(e)
         return
-    image = scale_image(image, new_width)
+    image = scale_image(image, new_width, aspect_ratio)
     image = grayscale_image(image)
     ascii_str = map_pixels_to_ascii(image)
     return ascii_str
@@ -40,7 +38,7 @@ def get_text_dimensions(text, font):
     width, height = mask.size
     return width, height
 
-def ascii_to_image(ascii_str, font_size=10):  # Adjust the font_size as necessary
+def ascii_to_image(ascii_str, font_size=10, aspect_ratio=0.55):  # Adjust the font_size as necessary
     ascii_str_lines = ascii_str.split('\n')
     fnt = ImageFont.truetype('cour.ttf', font_size)
     max_width = 0
@@ -68,10 +66,10 @@ def ascii_to_image(ascii_str, font_size=10):  # Adjust the font_size as necessar
 
     return img
 
-def main(image_path, new_width):
-    ascii_img = convert_image_to_ascii(image_path, new_width)
-    img = ascii_to_image(ascii_img, font_size=10)  # Adjust the font_size as necessary
+def main(image_path, new_width, aspect_ratio=0.55):  # Adjust aspect_ratio as necessary
+    ascii_img = convert_image_to_ascii(image_path, new_width, aspect_ratio)
+    img = ascii_to_image(ascii_img, font_size=10, aspect_ratio=aspect_ratio)  # Adjust the font_size as necessary
     img.save('ascii_image.png')
 
 if __name__ == "__main__":
-    main("test.png", 1000)
+    main("test.png", 1000, aspect_ratio=0.6)  # Experiment with different aspect_ratio values

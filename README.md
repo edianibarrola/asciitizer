@@ -7,6 +7,13 @@ this code will allow you to convert any png image into ascii art.  for example, 
 
 
 How to use:
+
+
+
+type pip install Pillow in the terminal, then when it finishes, type pipinstall numpy.
+
+
+
 place your input image wherever the python file is. ( if you're using gitpod, just upload it in )
 Change the upload image name to 'test.png'  (there is one already there as an example. you need to replace it.)
 

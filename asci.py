@@ -2,7 +2,7 @@ from PIL import Image, ImageDraw, ImageFont
 import numpy as np
 
 # Path to the input image
-INPUT_IMAGE_PATH = "test.jpg"
+INPUT_IMAGE_PATH = "test.png"
 
 # Number of ASCII characters in each row of the output image
 ASCII_CHARACTERS_IN_ROW = 400

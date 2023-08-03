@@ -5,6 +5,21 @@ this code will allow you to convert any png image into ascii art.  for example, 
 ![image](https://github.com/edianibarrola/asciitizer/assets/13739419/796aa713-d929-4202-bda0-d610b07c5079)
 
 
+greyscale / no
+![image](https://github.com/edianibarrola/asciitizer/assets/13739419/c6584bdc-673a-4b4a-9f3e-195366f8ae81)
+
+color / no
+![image](https://github.com/edianibarrola/asciitizer/assets/13739419/63bb5461-529c-44b3-ab2e-3be527ae3fd6)
+
+
+
+
+grayscale / yes 
+![image](https://github.com/edianibarrola/asciitizer/assets/13739419/776b31e0-477e-46a7-b656-5a249c9bbe25)
+
+color / yes
+![image](https://github.com/edianibarrola/asciitizer/assets/13739419/dae9647a-9e73-45a0-bd8e-f461cb9a186b)
+
 
 How to use:
 

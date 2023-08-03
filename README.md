@@ -3,23 +3,23 @@
 <div style="display: flex; gap: 20px;">
   <div style="flex: 0 0 20%; text-align: center;">
     <h3>Original</h3>
-    <img src="https://github.com/edianibarrola/asciitizer/assets/13739419/76d31356-dade-4582-b3a7-656a02bd9921" style="width: 20%; border-radius: 4px;">
+    <img src="https://github.com/edianibarrola/asciitizer/assets/13739419/76d31356-dade-4582-b3a7-656a02bd9921" style="width: 40%; border-radius: 4px;">
   </div>
   <div style="flex: 0 0 20%; text-align: center;">
     <h3>Greyscale / No</h3>
-    <img src="https://github.com/edianibarrola/asciitizer/assets/13739419/c6584bdc-673a-4b4a-9f3e-195366f8ae81" style="width: 20%; border-radius: 4px;">
+    <img src="https://github.com/edianibarrola/asciitizer/assets/13739419/c6584bdc-673a-4b4a-9f3e-195366f8ae81" style="width: 40%; border-radius: 4px;">
   </div>
   <div style="flex: 0 0 20%; text-align: center;">
     <h3>Color / No</h3>
-    <img src="https://github.com/edianibarrola/asciitizer/assets/13739419/63bb5461-529c-44b3-ab2e-3be527ae3fd6" style="width: 20%; border-radius: 4px;">
+    <img src="https://github.com/edianibarrola/asciitizer/assets/13739419/63bb5461-529c-44b3-ab2e-3be527ae3fd6" style="width: 40%; border-radius: 4px;">
   </div>
   <div style="flex: 0 0 20%; text-align: center;">
     <h3>Greyscale / Yes</h3>
-    <img src="https://github.com/edianibarrola/asciitizer/assets/13739419/776b31e0-477e-46a7-b656-5a249c9bbe25" style="width: 20%; border-radius: 4px;">
+    <img src="https://github.com/edianibarrola/asciitizer/assets/13739419/776b31e0-477e-46a7-b656-5a249c9bbe25" style="width: 40%; border-radius: 4px;">
   </div>
   <div style="flex: 0 0 20%; text-align: center;">
     <h3>Color / Yes</h3>
-    <img src="https://github.com/edianibarrola/asciitizer/assets/13739419/dae9647a-9e73-45a0-bd8e-f461cb9a186b" style="width: 20%; border-radius: 4px;">
+    <img src="https://github.com/edianibarrola/asciitizer/assets/13739419/dae9647a-9e73-45a0-bd8e-f461cb9a186b" style="width: 40%; border-radius: 4px;">
   </div>
 </div>
 

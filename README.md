@@ -1,21 +1,26 @@
 # Asciitizer
 
 This code will allow you to convert any PNG image into ASCII art. For example, the first image into the second.
-**Original Image
-<img src="https://github.com/edianibarrola/asciitizer/assets/13739419/76d31356-dade-4582-b3a7-656a02bd9921" width="300">
 
+<div style="float: left;">
+    <img src="https://github.com/edianibarrola/asciitizer/assets/13739419/c6584bdc-673a-4b4a-9f3e-195366f8ae81" width="300">
+    <p><strong>Greyscale / No</strong></p>
+</div>
+<div style="float: left; padding-left: 20px;">
+    <img src="https://github.com/edianibarrola/asciitizer/assets/13739419/63bb5461-529c-44b3-ab2e-3be527ae3fd6" width="300">
+    <p><strong>Color / No</strong></p>
+</div>
+<div style="clear: both;"></div>
 
-**Greyscale / No**
-<img src="https://github.com/edianibarrola/asciitizer/assets/13739419/c6584bdc-673a-4b4a-9f3e-195366f8ae81" width="300">
-
-**Color / No**
-<img src="https://github.com/edianibarrola/asciitizer/assets/13739419/63bb5461-529c-44b3-ab2e-3be527ae3fd6" width="300">
-
-**Grayscale / Yes**
-<img src="https://github.com/edianibarrola/asciitizer/assets/13739419/776b31e0-477e-46a7-b656-5a249c9bbe25" width="300">
-
-**Color / Yes**
-<img src="https://github.com/edianibarrola/asciitizer/assets/13739419/dae9647a-9e73-45a0-bd8e-f461cb9a186b" width="300">
+<div style="float: left;">
+    <img src="https://github.com/edianibarrola/asciitizer/assets/13739419/776b31e0-477e-46a7-b656-5a249c9bbe25" width="300">
+    <p><strong>Greyscale / Yes</strong></p>
+</div>
+<div style="float: left; padding-left: 20px;">
+    <img src="https://github.com/edianibarrola/asciitizer/assets/13739419/dae9647a-9e73-45a0-bd8e-f461cb9a186b" width="300">
+    <p><strong>Color / Yes</strong></p>
+</div>
+<div style="clear: both;"></div>
 
 ## How to use:
 

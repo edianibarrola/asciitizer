@@ -6,12 +6,12 @@ Original Image
 <img src="https://github.com/edianibarrola/asciitizer/assets/13739419/76d31356-dade-4582-b3a7-656a02bd9921" width="300">
 
 <div style="display: flex; flex-direction: row;">
-  <div style="flex: 30%; padding-right: 10px;">
+  <div style="flex: 10%; padding-right: 10px;">
     Greyscale / No
     <br>
     <img src="https://github.com/edianibarrola/asciitizer/assets/13739419/c6584bdc-673a-4b4a-9f3e-195366f8ae81" width="100%">
   </div>
-  <div style="flex: 30%; padding-left: 10px;">
+  <div style="flex: 10%; padding-left: 10px;">
     Color / No
     <br>
     <img src="https://github.com/edianibarrola/asciitizer/assets/13739419/63bb5461-529c-44b3-ab2e-3be527ae3fd6" width="100%">
@@ -19,12 +19,12 @@ Original Image
 </div>
 
 <div style="display: flex; flex-direction: row;">
-  <div style="flex: 30%; padding-right: 10px;">
+  <div style="flex: 10%; padding-right: 10px;">
     Greyscale / Yes
     <br>
     <img src="https://github.com/edianibarrola/asciitizer/assets/13739419/776b31e0-477e-46a7-b656-5a249c9bbe25" width="100%">
   </div>
-  <div style="flex: 30%; padding-left: 10px;">
+  <div style="flex: 10%; padding-left: 10px;">
     Color / Yes
     <br>
     <img src="https://github.com/edianibarrola/asciitizer/assets/13739419/dae9647a-9e73-45a0-bd8e-f461cb9a186b" width="100%">
